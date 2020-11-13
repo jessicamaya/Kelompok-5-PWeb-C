@@ -770,6 +770,7 @@ li>a {
     width: 95%;
     align-items: center;
     margin-left: 50px;
+    padding-bottom: 32px;
 }
 
 .kotak-abu {
@@ -886,6 +887,7 @@ li>a {
     width: 95%;
     align-items: center;
     margin-left: 50px;
+    padding-bottom: 38px;
 }
 
 .kotak-abu2 {
@@ -1378,7 +1380,7 @@ li>a {
     color: white;
 }
 
-/* Diskusi Populer*/
+/* Diskusi Populer + Diskusi */
 
 .diskusi-container {
     padding: 100px 0px 40px 0px;
@@ -1472,6 +1474,7 @@ li>a {
     display: flex;
     flex-direction: column;
     margin-left: 15%;
+    padding-bottom: 80px;
 }
 
 .diskusi-buat-main-container {
@@ -1544,6 +1547,8 @@ div .diskusi-footer-username :visited{
     color: var(--merahtua);
 }
 
+/* Diskusi Komentar */
+
 .diskusi-komentar-title {
     font-size: 20pt;
     font-weight: 600;
@@ -1590,10 +1595,11 @@ div .diskusi-footer-username :visited{
     margin-bottom: 30px;
 }
 
+/* +Diskusi Buat Diskusi */
+
 .diskusi-kotak-buat-komentar {
     width: 80%;
     height: 20vh;
-    
 }
 
 #diskusi-kotak-buat-komentar-code {
