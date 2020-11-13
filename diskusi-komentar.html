@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Forum Diskusi - Populer</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-kiri">
+            <a href="halaman-akun.html">
+                <div class="navbar-logo"> </div>
+            </a>
+            <ul class="navbar-menu-list">
+                <li><a href="pelajaran.html"> Pelajaran </a></li>
+                <li><a href="kelas.html"> Kelas </a></li>
+                <li><a href="diskusi-populer.html"> Forum </a></li>
+            </ul>
+        </div>
+    
+        <div class="navbar-kanan">
+            <div class="navbar-username">
+                jessicamaya
+            </div>
+            <a href="halaman-akun-open-menu.html">
+                <div class="navbar-segitiga"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="diskusi-container">
+        <div class="diskusi-tulisan">
+            Forum Diskusi
+        </div>
+        
+        <div class="diskusi-menu-container">
+            <div class="diskusi-menu-kiri-container">
+                <a href="diskusi-populer.html"><input type="button" value="Populer" class="diskusi-menu-box" style="color:white"></a>
+                <span class="box-span"></span>
+                <a href="diskusiku.html"><input type="button" value="Diskusimu" class="diskusi-menu-box" style="background-color: #CDCDCD;"></a>
+            </div>
+            <div class="diskusi-menu-kanan-container">
+                <form class="diskusi-menu-search">
+                    <input type="text" placeholder="Search.." name="search" class="diskusi-menu-search-box">
+                    <button type="submit" class="diskusi-menu-search-img"></button>
+                </form>
+                <div class="diskusi-mulai-diskusi-tombol-container">
+                    <a href="diskusi-komentar.html">
+                        <input type="button" value="Mulai Diskusi" class="diskusi-mulai-diskusi-tombol">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="diskusi-line"></div>
+
+        <div class="diskusi-main-container">
+            <div class="diskusi-main-box" id="diskusi-box-komentar">
+                <h2 class="diskusi-main-box-header"> Kenapa outputnya berbeda? </h2>
+                <div class="diskusi-main-box-text">
+                    Permisi, saya baru belajar python dan mendapatkan kesulitan. Saat saya mulai mengoding dengan ketentuan "100-75
+                    keluar output Bagus, 74-50 Lumayan." tapi saat saya mencoba menginputkan angka 75 output yang keluar malah "Jelek", sementara
+                    output yang diharapkan bukan "Bagus", melainkan output berupa "Jelek". Berikut kodingan saya.
+                </div>
+
+                <div class="diskusi-main-coding-container">
+                    <div class="diskusi-main-coding-box">
+                        
+                    </div> 
+                </div>
+
+                <div class="diskusi-main-box-footer">
+                    <div class="diskusi-main-box-footer-kiri">
+                        <div class="diskusi-main-box-footer-komen">
+                            <b> Komen </b>
+                        </div>
+                        <a href="diskusi.html"><input type="button" value="2" class="diskusi-main-box-footer-jumlah-komen"></a>
+                    </div>
+                    <div class="diskusi-main-box-footer-kanan">
+                        ditanya oleh <a href="#" class="diskusi-footer-username">jessicamaya</a> 40 menit lalu
+                    </div>
+                </div>
+            </div>
+
+            <div class="diskusi-komentar">
+                <div class="diskusi-komentar-title">
+                    Komentar
+                </div>
+
+                <div class="diskusi-komentar-line"></div>
+
+                <div class="diskusi-komentar-username-time-box">
+                    <div class="diskusi-komentar-username">
+                        rarasdwistian
+                    </div>
+                    <div class="diskusi-komentar-time">
+                        35 menit lalu
+                    </div>
+                </div>
+
+                <div class="diskusi-komentar-text">
+                    Dalam kasus tersebut, jika angka < 100 dan angka < 75 maka angka 100 dan 75 tidak termasuk dalam kategori Bagus. Kategori Bagus
+                    hanya berisikan 99-74. Untuk mengatasi hal tersebut bisa menggunakan sama dengan (=) atau dengan kode:
+                </div>
+
+                <div class="diskusi-komentar-coding-flex"><div class="diskusi-komentar-coding"></div></div>
+
+                <div class="diskusi-komentar-line"></div>
+
+                <div class="diskusi-komentar-username-time-box">
+                    <div class="diskusi-komentar-username">
+                        kayranadya
+                    </div>
+                    <div class="diskusi-komentar-time">
+                        27 menit lalu
+                    </div>
+                </div>
+
+                <div class="diskusi-komentar-text">
+                    Bisa menggunakan angka < 101 and angka > 76 supaya angka 100 dan 75 bisa masuk ke kategori Bagus.
+
+                </div>
+            </div>
+            <div class="diskusi-komentar-line"></div>
+            <div class="diskusi-komentar-title">
+                Komentari
+            </div>
+
+            <div class="diskusi-buat-komentar-container">
+                <form action="submit">
+                    <div><input type="text" placeholder="Ketik disini..." class="diskusi-kotak-buat-komentar" id="diskusi-kotak-buat-komentar-teks"></div>
+                    <div><input type="text" placeholder="Tambahkan kodingan jika perlu..." class="diskusi-kotak-buat-komentar" id="diskusi-kotak-buat-komentar-code"></div>
+                    <a href="diskusi-komentar.html">
+                        <div><input type="submit" value="Kirim" id="diskusi-kotak-kirim-komentar"></div>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo"></div>
+        <ul class="footer-menu">
+            <li class="footer-menu-list"><a href="#">Bantuan</a></li>
+            <li class="footer-menu-list"><a href="#">FAQ</a></li>
+            <li class="footer-menu-list"><a href="#">Hubungi Kami</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+

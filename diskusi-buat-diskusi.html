@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Forum Diskusi - Populer</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-kiri">
+            <a href="halaman-akun.html">
+                <div class="navbar-logo"> </div>
+            </a>
+            <ul class="navbar-menu-list">
+                <li><a href="pelajaran.html"> Pelajaran </a></li>
+                <li><a href="kelas.html"> Kelas </a></li>
+                <li><a href="diskusi-populer.html"> Forum </a></li>
+            </ul>
+        </div>
+    
+        <div class="navbar-kanan">
+            <div class="navbar-username">
+                jessicamaya
+            </div>
+            <a href="halaman-akun-open-menu.html">
+                <div class="navbar-segitiga"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="diskusi-container">
+        <div class="diskusi-tulisan">
+            Forum Diskusi
+        </div>
+        
+        <div class="diskusi-menu-container">
+            <div class="diskusi-menu-kiri-container">
+                <a href="diskusi-populer.html"><input type="button" value="Populer" class="diskusi-menu-box" style="color:white"></a>
+                <span class="box-span"></span>
+                <a href="diskusiku.html"><input type="button" value="Diskusimu" class="diskusi-menu-box" style="background-color: #CDCDCD;"></a>
+            </div>
+            <div class="diskusi-menu-kanan-container">
+                <form class="diskusi-menu-search">
+                    <input type="text" placeholder="Search.." name="search" class="diskusi-menu-search-box">
+                    <button type="submit" class="diskusi-menu-search-img"></button>
+                </form>
+                <div class="diskusi-mulai-diskusi-tombol-container">
+                    <input type="button" value="Mulai Diskusi" class="diskusi-mulai-diskusi-tombol">
+                </div>
+            </div>
+        </div>
+
+        <div class="diskusi-line"></div>
+
+        <div class="diskusi-buat-main-container">
+            <div class="diskusi-komentar-title">
+                Tambahkan Diskusi
+            </div>
+
+            <div class="diskusi-buat-komentar-container">
+                <form action="submit">
+                    <div><input type="text" placeholder="Ketik disini..." id="diskusi-kotak-buat-judul-teks"></div>
+                    <div><input type="text" placeholder="Ketik disini..." class="diskusi-kotak-buat-komentar" id="diskusi-kotak-buat-komentar-teks"></div>
+                    <div><input type="text" placeholder="Tambahkan kodingan jika perlu..." class="diskusi-kotak-buat-komentar" id="diskusi-kotak-buat-komentar-code"></div>
+                    <div><input type="submit" value="Kirim" id="diskusi-kotak-kirim-komentar"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo"></div>
+        <ul class="footer-menu">
+            <li class="footer-menu-list"><a href="#">Bantuan</a></li>
+            <li class="footer-menu-list"><a href="#">FAQ</a></li>
+            <li class="footer-menu-list"><a href="#">Hubungi Kami</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
