@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
     --ungutua: #1E1B23;
     --abu2: #CDCDCD;
     --merahtua: #9D0F0D;
-    --abumuda: 	#E5E5E5;
+    --abumuda: #E5E5E5;
 }
 
 * {
@@ -27,6 +26,7 @@ li a:visited {
     color: white;
 }
 
+
 /* Header */
 
 .navbar {
@@ -48,7 +48,6 @@ li a:visited {
 .navbar-kanan {
     display: flex;
     align-items: center;
-    padding-right: 80px;
 }
 
 .navbar-logo {
@@ -76,7 +75,9 @@ li>a {
     background-size: cover;
     width: 10px;
     height: 7px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 
@@ -111,6 +112,7 @@ li>a {
     margin: 0px 15px;
 }
 
+
 /* Halaman Utama */
 
 .halaman-utama-atas-bawah {
@@ -125,14 +127,18 @@ li>a {
     justify-content: center;
 }
 
-.halaman-utama-atas-bawah-kiri-judul {
-    font-weight: 700;
-    font-size: 40pt;
+.title-awal {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
-.halaman-utama-atas-bawah-kiri-text {
-    margin-top: 30px;
-    font-size: 15pt;
+.sub-title-awal {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .halaman-utama-atas-bawah-kiri-tombol-container {
@@ -145,7 +151,6 @@ li>a {
     border: 3px solid black;
     padding: 15px 40px;
     background-color: white;
-
 }
 
 .halaman-utama-atas-bawah-footer {
@@ -154,6 +159,11 @@ li>a {
     font-size: 25pt;
     font-weight: 700;
     margin-bottom: 50px;
+}
+
+.halaman-utama-atas-bawah-kiri-judul {
+    font-weight: bold;
+    font-size: 30pt;
 }
 
 .halaman-utama-tengah-container-utama {
@@ -200,7 +210,7 @@ li>a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px 0; 
+    padding: 30px 0;
 }
 
 .halaman-utama-gabung-tulisan {
@@ -221,76 +231,25 @@ li>a {
     font-size: 15pt;
 }
 
+
 /* Daftar Login */
 
 .cover {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color:rgba(0,0,0,1);
-    opacity:0.85;
-    z-index:1001;
-}
-
-.cover-container{
     position: fixed;
-    top:30px;
-    left: 37vw;
-    width:27%;
-    background-color:#fff;
-    opacity:1;
-    z-index:1002;
-    padding: 20px 30px;
-    border-radius: 10px;
-}
-
-.cover-container-title {
-    font-size: 15pt;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-.cover-container-input {
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 10px 55% 10px 1%;
-    background-color: #E8F0FE;
-    margin: 10px 0;
-}
-
-.cover-container-input :focus {
-    outline: none;
-    background-color: red;
-}
-
-.cover-container-tombol-login {
-    color: red;
-    font-weight: 600;
-    background-color: var(--abu2);
-    border: none;
-    padding: 8px 20px;
-    margin: 15px 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cover-container-lupa-password {
-    font-size: 10pt;
-    margin-left: 10px;
-    text-decoration: underline;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1001;
 }
 
 .cover-container-daftar-login {
-    text-decoration: none;
+    text-decoration: underline;
     color: red;
 }
 
-.cover-container-daftar-login :visited {
-    text-decoration: none;
-    color: red;
-}
+/* Navbar utama */
 
 .nav-menu-utama {
     width: 100%;
@@ -327,7 +286,6 @@ li>a {
 
 .nav-utama-jarak {
     padding: 0 20px;
-    
 }
 
 #nav-utama-tombol2 {
@@ -335,6 +293,7 @@ li>a {
     background-color: var(--abu2);
     color: black;
 }
+
 
 /* Selamat Datang (Halaman Masuk) */
 
@@ -366,7 +325,6 @@ li>a {
     font-weight: bold;
     text-decoration: underline;
 }
-
 
 .selamatdatang-container-tengah1 {
     display: flex;
@@ -481,9 +439,14 @@ li>a {
     width: 50%;
 }
 
+
 /* Open Menu */
+.menu-akun.show {
+    display: block;
+}
 
 .menu-akun {
+    display:none;
     background-color: white;
     border: 1px solid grey;
     border-radius: 3px;
@@ -510,6 +473,7 @@ li>a {
     color: black;
 }
 
+
 /* Pengaturan */
 
 .tulisan-pengaturan {
@@ -517,7 +481,7 @@ li>a {
     font-size: 35px;
 }
 
-.isi-form{
+.isi-form {
     font-size: 18px;
     font-weight: bolder;
     padding-top: 30px;
@@ -851,6 +815,7 @@ li>a {
     height: 70%;
 }
 
+
 /* Silabus Materi 2 */
 
 .minggu-2 {
@@ -873,6 +838,7 @@ li>a {
     justify-content: center;
     cursor: pointer;
 }
+
 
 /* Ambil Kelas */
 
@@ -918,14 +884,15 @@ li>a {
 }
 
 .tombol-kembali2 {
-    background-color: var(--abumuda); /*JANGAN LUPA GANTI*/
+    background-color: var(--abumuda);
+    /*JANGAN LUPA GANTI*/
     width: 40%;
     padding: 10px 0px;
     font-size: 15px;
     cursor: pointer;
 }
 
-.kotak-persetujuan{
+.kotak-persetujuan {
     text-align: center;
     width: 55%;
     height: 55vh;
@@ -977,6 +944,7 @@ li>a {
     font-style: italic;
     font-weight: 400;
 }
+
 
 /* Kelas Anda */
 
@@ -1070,6 +1038,7 @@ li>a {
 .kelasanda-jarak {
     margin-bottom: 40px;
 }
+
 
 /* Materi Dasar-Dasar python */
 
@@ -1224,6 +1193,7 @@ li>a {
     color: white;
     cursor: pointer;
 }
+
 
 /* Tugas Dasar-dasar Python */
 
@@ -1380,6 +1350,7 @@ li>a {
     color: white;
 }
 
+
 /* Diskusi Populer + Diskusi */
 
 .diskusi-container {
@@ -1395,7 +1366,7 @@ li>a {
 .diskusi-menu-container {
     font-size: 14pt;
     align-items: flex-end;
-    padding : 0px 0px 0px 30px;
+    padding: 0px 0px 0px 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -1442,7 +1413,6 @@ li>a {
     padding: 8px;
 }
 
-
 .diskusi-menu-search-img {
     border: none;
     background-image: url('../img/diskusi-search.png');
@@ -1461,7 +1431,7 @@ li>a {
     border: 2px solid black;
     border-bottom: none;
     background-color: white;
-    padding: 13px 15px; 
+    padding: 13px 15px;
     outline: none;
     cursor: pointer;
 }
@@ -1538,14 +1508,15 @@ li>a {
     cursor: pointer;
 }
 
-div .diskusi-footer-username  {
+div .diskusi-footer-username {
     color: var(--merahtua);
     text-decoration: none;
 }
 
-div .diskusi-footer-username :visited{
+div .diskusi-footer-username :visited {
     color: var(--merahtua);
 }
+
 
 /* Diskusi Komentar */
 
@@ -1595,6 +1566,7 @@ div .diskusi-footer-username :visited{
     margin-bottom: 30px;
 }
 
+
 /* +Diskusi Buat Diskusi */
 
 .diskusi-kotak-buat-komentar {
@@ -1624,5 +1596,756 @@ div .diskusi-footer-username :visited{
     color: white;
     margin: 30px 0;
     background-color: var(--ungutua);
-    padding: 15px 40px;
+    padding: 10px 25px;
+}
+
+
+/* Daftar Login */
+
+.cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.cover.show {
+    display: block;
+}
+
+.cover-verdict {
+    display: none;
+    border: 2px solid black;
+    position: fixed;
+    top: 30px;
+    left: 37vw;
+    width: 27%;
+    background-color: #ffffff;
+    opacity: 1;
+    padding: 10px 30px;
+    border-radius: 5px;
+    z-index: 10;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.cover-verdict.show {
+    display: block;
+}
+
+.cover-container {
+    position: fixed;
+    top: 90px;
+    left: 37vw;
+    width: 27%;
+    background-color: #ffffff;
+    opacity: 1;
+    padding: 20px 30px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.cover-container-title {
+    text-align: center;
+    font-size: 17pt;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cover-container-input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 55% 10px 1%;
+    background-color: #E8F0FE;
+    margin: 10px 0;
+}
+
+.cover-container-input :focus {
+    outline: none;
+    background-color: red;
+}
+
+.cover-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cover-container-tombol-login {
+    color: red;
+    font-weight: 600;
+    background-color: var(--abu2);
+    border: none;
+    padding: 8px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cover-container-lupa-password {
+    font-size: 10pt;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+    .nav-menu-utama {
+        width: 100%;
+    }
+    .title-awal {
+        font-weight: 750;
+        font-size: 20pt;
+    }
+    .sub-title-awal {
+        font-size: 10pt;
+    }
+    .halaman-utama-container {
+        width: 100%;
+    }
+    .halaman-utama-atas-bawah-kanan img {
+        width: 250px;
+        height: 250px;
+    }
+    .halaman-utama-atas-bawah-kiri-tombol-container {
+        padding-left: 10px;
+    }
+    .halaman-utama-atas-bawah-kiri-tombol {
+        font-size: 12pt;
+        font-weight: 700;
+        border: 3px solid black;
+        padding: 8px 20px;
+        background-color: white;
+    }
+    .halaman-utama-atas-bawah-footer {
+        margin-top: 10px;
+        font-size: 15pt;
+        font-weight: 700;
+    }
+    .halaman-utama-tengah-container-utama {
+        width: 100%;
+    }
+    .halaman-utama-tengah {
+        flex-direction: column;
+    }
+    .halaman-utama-atas-bawah-kiri-judul {
+        margin-left: 20px;
+        font-size: 15pt;
+    }
+    .halaman-utama-atas-bawah-kiri-tulisan2 {
+        font-size: 8pt;
+        margin-left: 10px;
+    }
+    .halaman-utama-gabung-tulisan {
+        font-size: 25pt;
+        font-weight: 700;
+    }
+    .halaman-utama-gabung-tombol {
+        border: 2px solid black;
+        background-color: #CDCDCD;
+        font-size: 10pt;
+        font-weight: 500;
+        padding: 10px 20px
+    }
+    .halaman-utama-gabung-tulisan2 {
+        margin: 30px 0;
+        font-size: 10pt;
+    }
+    /* Ambil Kelas */
+    .tulisan-ambilkelas {
+        font-size: 30px;
+    }
+    .main-ambilkelas {
+        width: 80%;
+    }
+    .kotak-abu2 {
+        background-color: var(--abumuda);
+        text-align: center;
+        width: 100%;
+        height: 40vh;
+    }
+    .dasar-ambilkelas {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 20px 0px 5px 0px;
+    }
+    .tombol-silabusmateri {
+        width: 50%;
+        padding: 3px 0px;
+        font-size: 10px;
+    }
+    .tombol-kembali2 {
+        width: 50%;
+        padding: 3px 0px;
+        font-size: 10px;
+    }
+    .kotak-persetujuan {
+        width: 100%;
+    }
+    .konfirmasi {
+        font-size: 20px;
+    }
+    .dengan-mengambil {
+        font-size: 15px;
+    }
+    .nama-username {
+        font-size: 20px;
+    }
+    .menyetujui {
+        font-size: 20px;
+    }
+    .kotak-syarat {
+        font-size: 15px;
+    }
+    .tombol-ambilkelas2 {
+        width: 50%;
+        padding: 6px 0px;
+        font-size: 8px;
+        margin: 5px 0px 3px 0;
+    }
+    .jika-anda {
+        color: var(--merahtua);
+        font-size: 8px;
+        font-style: italic;
+        font-weight: 400;
+    }
+    /* Diskusi Populer + Diskusi */
+    .diskusi-container {
+        width: 100%;
+    }
+    .diskusi-tulisan {
+        font-size: 20pt;
+    }
+    .diskusi-menu-container {
+        font-size: 10pt;
+    }
+    .diskusi-menu-box {
+        font-size: 10pt;
+    }
+    .box-span {
+        width: 0vh;
+    }
+    .diskusi-menu-kanan-container {
+        margin-right: 30px;
+    }
+    .diskusi-menu-search {
+        border: 1px solid grey;
+        font-size: 2pt;
+        margin-left: 10px;
+    }
+    .diskusi-menu-search-box {
+        border: none;
+        padding: 1px 4px 13px 10px;
+    }
+    .diskusi-menu-search-input {
+        padding: 1px;
+    }
+    .diskusi-menu-search-img {
+        width: 30px;
+        height: 30px;
+    }
+    .diskusi-mulai-diskusi-tombol-container {
+        margin-left: 5px;
+    }
+    .diskusi-mulai-diskusi-tombol {
+        border: 2px solid black;
+        background-color: white;
+        padding: 6px 4px;
+    }
+    .diskusi-line {
+        border-top: 2px solid black;
+    }
+    .diskusi-main-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        padding-bottom: 80px;
+    }
+    .diskusi-buat-main-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .diskusi-main-box {
+        border: 2px solid grey;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 50px;
+        text-align: justify;
+        padding: 5px 0;
+    }
+    #diskusi-box-komentar {
+        padding: 5px 0;
+    }
+    .diskusi-main-box-header {
+        padding: 20px 20px 10px 50px;
+    }
+    .diskusi-main-box-text {
+        padding: 5px 30px;
+    }
+    .diskusi-main-coding-container {
+        display: flex;
+        justify-content: center;
+    }
+    .diskusi-main-coding-box {
+        margin: 20px 0;
+        background-image: url('../img/diskusi-coding.png');
+        background-size: cover;
+        height: 160px;
+        width: 900px;
+    }
+    .diskusi-main-box-footer {
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .diskusi-menu-kiri-container {
+        display: flex;
+    }
+    .diskusi-menu-box {
+        font-size: 8pt;
+        border: 1px solid grey;
+        width: 90%;
+        padding: 8px 10px;
+        margin: 0 5px 0 0;
+    }
+    .diskusi-main-box-footer-komen {
+        margin-right: 10px;
+    }
+    /* Selamat Datang (Halaman Masuk) */
+    .selamatdatang-container-atas {
+        height: 432px;
+    }
+    .selamatdatang-nama {
+        font-size: 30px;
+    }
+    .selamatdatang-tawaran {
+        font-size: 20px;
+    }
+    .selamatdatang-gambar-atas img {
+        height: 300px;
+        width: 400px;
+    }
+    .selamatdatang-container-tengah1 {
+        height: 330px;
+    }
+    .selamatdatang-container-tengah1-kanan-gambar img {
+        height: 250px;
+        width: 230px;
+    }
+    .selamatdatang-container-tengah1-kiri {
+        width: 50%;
+    }
+    .selamatdatang-container-tengah1-kiri-text {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .selamatdatang-container-tengah1-kanan {
+        display: flex;
+        justify-content: center;
+    }
+    .selamatdatang-container-tengah2 {
+        height: 300px;
+    }
+    .selamatdatang-container-tengah2-kiri img {
+        height: 250px;
+        width: 250px;
+        margin-left: 30px;
+    }
+    .selamatdatang-container-tengah2-kanan-text {
+        font-size: 20px;
+    }
+    .selamatdatang-container-bawah {
+        height: 300px;
+    }
+    .selamatdatang-container-bawah-kiri-text {
+        font-size: 20px;
+    }
+    .selamatdatang-container-bawah-kanan-gambar img {
+        width: 240px;
+        height: 240px;
+    }
+    /* Kelas Anda */
+    .tulisan-kelasanda {
+        padding: 110px 0px 0px 20px;
+        font-size: 27px;
+    }
+    .main-kelasanda-atas {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .kelasanda-kotak-atas {
+        display: flex;
+        background-color: lightgrey;
+        width: 70%;
+        height: 45vh;
+        justify-content: space-between;
+        border: 2px solid grey;
+    }
+    .kelasanda-kotak-atas-kiri {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    .kelasanda-dasarpython {
+        font-size: 14px;
+    }
+    .level-kelasanda {
+        font-size: 15px;
+    }
+    .tombol-kelasanda button {
+        border-radius: 7px;
+        height: 30px;
+        width: 120px;
+    }
+    .kelasanda-minggu {
+        font-size: 26px;
+    }
+    .kelasanda-materi1 {
+        margin: 10px 0px 10px 8px;
+        font-size: 14px;
+    }
+    .tulisan-tugas {
+        font-size: 25px;
+    }
+    .tombol-kelasanda2 button {
+        height: 40px;
+        width: 100px;
+        font-size: 15px;
+    }
+    /* Materi Dasar-Dasar python */
+    .tulisan-dasarpython {
+        padding: 100px 0px 20px 100px;
+        font-size: 25px;
+    }
+    .main-materi-python {
+        max-width: 100%;
+        height: 230vh;
+        border: 3px solid grey;
+    }
+    .main-materi-judul {
+        font-size: 30px;
+    }
+    .main-materi-judul h3 {
+        font-size: 22px;
+    }
+    .line {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi1 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem2 p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi2 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem3 p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi3 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem4 p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi4 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem5 p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi5 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem6 p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi6 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem7 p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi7 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem8 p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .gambar-materi8 img {
+        margin-left: 16%;
+        width: 70%;
+    }
+    .lorem-panjang p {
+        margin-left: 16%;
+        font-size: 17px;
+    }
+    .lorem-panjang button {
+        margin: 12px 0 0 37%;
+        height: 40px;
+        font-size: medium;
+        width: 130px;
+    }
+    /* Rekomendasi Kelas Untukmu (Halaman Kelas) */
+    .tulisan-rekomendasikelas {
+        font-size: 25px;
+    }
+    .main-rekomendasikelas-atas {
+        padding-top: 10px;
+    }
+    .rekomendasi-kotak-atas {
+        height: 42vh;
+    }
+    .rekomendasi-dasarpython {
+        padding: 30px 0 0 40px;
+        font-size: 17px;
+    }
+    .level-rekomendasi {
+        padding: 5px 0 0 55px;
+        font-size: 16px;
+    }
+    .tombol-rekomendasi button {
+        border-radius: 8px;
+        margin: 20px 15px 5px 40px;
+        height: 35px;
+        width: 90px;
+        border: 2px solid black;
+    }
+    .rekomendasi-kotak-atas-kanan {
+        padding: 50px 50px 0 0;
+    }
+    .rekomendasi-tulisan-panjang {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .rekomendasi-kotak-bawah {
+        flex-direction: column;
+        height: 240vh;
+    }
+    /* Daftar Login */
+    .cover {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    .cover.show {
+        display: block;
+    }
+    .cover-verdict {
+        display: none;
+        border: 2px solid black;
+        position: fixed;
+        top: 30px;
+        left: 37vw;
+        width: 27%;
+        background-color: #ffffff;
+        opacity: 1;
+        padding: 10px 30px;
+        border-radius: 5px;
+        z-index: 10;
+        font-size: 11pt;
+        text-align: center;
+    }
+    .cover-verdict.show {
+        display: block;
+    }
+    .cover-container {
+        position: fixed;
+        top: 90px;
+        left: 37vw;
+        width: 27%;
+        background-color: #ffffff;
+        opacity: 1;
+        padding: 20px 30px;
+        border-radius: 10px;
+        z-index: 10;
+    }
+    .cover-container-title {
+        text-align: center;
+        font-size: 17pt;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .cover-container-input {
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 10px 55% 10px 1%;
+        background-color: #E8F0FE;
+        margin: 10px 0;
+    }
+    .cover-container-input :focus {
+        outline: none;
+        background-color: red;
+    }
+    .cover-button-container {
+        display: flex;
+        justify-content: center;
+    }
+    .cover-container-tombol-login {
+        padding: 8px 20px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    .cover-container-lupa-password {
+        font-size: 10pt;
+        margin-left: 10px;
+    }
+    /* Silabus Materi */
+    .tulisan-silabusmateri {
+        font-size: 35px;
+    }
+    .main-silabus {
+        width: 85%;
+    }
+    .kotak-abu {
+        width: 90%;
+        height: 40vh;
+    }
+    .kotak-kiri {
+        width: 35%;
+    }
+    .dasar-silabus {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 20px 0px 5px 0px;
+    }
+    .level-silabus {
+        font-weight: 300;
+    }
+    .tombol-ambilkelas {
+        width: 70%;
+        padding: 10px 0px;
+        margin: 70px 0px 5px 0px;
+        font-size: 10px;
+    }
+    .tombol-kembali {
+        width: 70%;
+        padding: 6px 0px;
+        font-size: 10px;
+    }
+    .kotak-kanan {
+        width: 45%;
+    }
+    .minggu-1 {
+        font-size: 15px;
+        padding: 45px 0px 10px 50px;
+    }
+    .minggu1 {
+        font-size: 13px;
+        padding: 6px 0px 10px 0px;
+    }
+    .kotak-img {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .img-silabus {
+        width: 100%;
+        height: 80%;
+    }
+    /* Tugas Dasar-dasar Python */
+    .tulisan-tugaspython {
+        padding: 100px 0px 20px 60px;
+        font-size: 25px;
+    }
+    .main-tugas-python {
+        height: 130vh;
+    }
+    .main-tugas-judul {
+        font-size: 23px;
+    }
+    .tugas-line {
+        margin-left: 15%;
+        width: 70%;
+    }
+    .lorem-tugas p {
+        margin-left: 10%;
+        font-size: 16px;
+    }
+    .contoh-input {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-left: 10%;
+    }
+    .contoh-output {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    .kotak1 {
+        width: 85%;
+        margin-left: 10%;
+    }
+    .kotak2 {
+        width: 85%;
+        margin-left: 10%;
+    }
+    .input-box {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .implementasi-kode {
+        margin-left: 10%;
+    }
+    .input-box input[type='text'] {
+        width: 94%;
+        height: 30px;
+    }
+    .tombol2 button {
+        margin-left: 49%;
+        height: 50px;
+        width: 140px;
+    }
+    .tombol3 button {
+        margin-left: 20%;
+        height: 50px;
+        width: 110px;
+    }
+    /* Daftar Login */
+    .cover {
+        z-index: 10;
+    }
+    .cover-container {
+        width: 35%;
+    }
+    .cover-container-input {
+        padding: 5px 10% 5px 1%;
+    }
+    .halaman-utama-container video {
+        width: 400px;
+        height: 500px;
+    }
 }
